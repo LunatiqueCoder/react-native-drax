@@ -1,3 +1,5 @@
+import { SharedValue } from "react-native-reanimated";
+import { Position } from "./types";
 /** Default snapback delay in milliseconds */
 export declare const defaultSnapbackDelay = 100;
 /** Default snapback duration in milliseconds */
@@ -16,12 +18,4 @@ export declare const defaultAutoScrollJumpRatio = 0.2;
 export declare const defaultAutoScrollBackThreshold = 0.1;
 /** Default drag-over minimum position threshold for auto-scroll forward, as a fraction relative to content width/length */
 export declare const defaultAutoScrollForwardThreshold = 0.9;
-export declare const INITIAL_REANIMATED_POSITION: {
-    value: {
-        x: number;
-        y: number;
-    };
-    addListener(): void;
-    removeListener(): void;
-    modify(): void;
-};
+export declare const INITIAL_REANIMATED_POSITION: SharedValue<Position>;

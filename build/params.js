@@ -21,6 +21,10 @@ exports.defaultAutoScrollBackThreshold = 0.1;
 exports.defaultAutoScrollForwardThreshold = 0.9;
 exports.INITIAL_REANIMATED_POSITION = {
     value: { x: 0, y: 0 },
+    get() {
+        return { x: 0, y: 0 };
+    },
+    set() { },
     addListener() { },
     removeListener() { },
     modify() { },

@@ -61,15 +61,7 @@ export declare const useDraxRegistry: (stateDispatch: DraxStateDispatch) => {
             y: number;
         };
         dragOffset: Position;
-        hoverPosition: import("react-native-reanimated").SharedValue<Position> | {
-            value: {
-                x: number;
-                y: number;
-            };
-            addListener(): void;
-            removeListener(): void;
-            modify(): void;
-        };
+        hoverPosition: import("react-native-reanimated").SharedValue<Position>;
     };
     updateDragPosition: (dragAbsolutePosition: Position) => void;
     updateReceiver: (receiver: DraxFoundAbsoluteViewEntry, dragged: DraxAbsoluteViewEntry) => import("../types").DraxTrackingReceiver | undefined;
